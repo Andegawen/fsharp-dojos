@@ -22,7 +22,7 @@ What a wonderful world"""
 
 [<EntryPoint>]
 let main argv =
-    printfn "%A" (generateFrom "I" sample 2)
+    printfn "%A" (generateFrom "I" sample)
     // printfn "%A" (getWords sample)
     // printfn "%A" (getBiGrams (getWords sample))
     0 // return an integer exit code
