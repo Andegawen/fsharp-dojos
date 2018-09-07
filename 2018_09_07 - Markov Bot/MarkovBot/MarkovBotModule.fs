@@ -10,5 +10,5 @@ let rec getBiGrams (words) =
     | el1::el2::rest -> (el1,el2)::getBiGrams(el2::rest)
     | _ -> []
 
-let generateFrom (startWord:string) (sample:string) (n:int) =
-    sample |> getWords |> getBiGrams |> List.filter (fun (x, _) -> x = startWord)
+let generateFrom (startWord:string) sample  =
+    sample |> getWords |> getBiGrams |> List.filter (fun (x, _) -> x = startWord) |> List.map snd
