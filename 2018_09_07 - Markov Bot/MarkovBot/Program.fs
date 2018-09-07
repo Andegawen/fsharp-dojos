@@ -24,4 +24,5 @@ What a wonderful world"""
 let main argv =
     printfn "%A" (generateFrom "I" sample 2)
     printfn "%A" (getWords sample)
+    printfn "%A" (getBiGrams (getWords sample))
     0 // return an integer exit code
