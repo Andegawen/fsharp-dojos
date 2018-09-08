@@ -25,4 +25,9 @@ let main argv =
     printfn "%A" (generateFrom "I" sample)
     // printfn "%A" (getWords sample)
     // printfn "%A" (getBiGrams (getWords sample))
+    
+    //This will fail:
+    pickRandom List.empty<int>
+    //So this is also not robust
+    generateFrom' "x" ""
     0 // return an integer exit code
